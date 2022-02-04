@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Navigation from "./components/Navigation/Navigation";
+import Home from "./components/Home/Home/Home";
 
 const App = () => {
  return (
-  <div>
-   <Navigation />
-  </div>
+  <>
+   <Home />
+  </>
  );
 };
 

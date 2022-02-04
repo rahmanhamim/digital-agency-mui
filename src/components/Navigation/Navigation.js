@@ -46,7 +46,6 @@ export default function Navigation() {
  });
 
  const { navItem, navIcon, navItemContainer, appBarBgColor } = useStyle();
-
  const [state, setState] = React.useState(false);
 
  const list = (
@@ -74,7 +73,7 @@ export default function Navigation() {
    <Box sx={{ flexGrow: 1 }}>
     <AppBar elevation={0} className={appBarBgColor} position="static">
      <Container>
-      <Toolbar>
+      <Toolbar sx={{ padding: "0 !important" }}>
        <IconButton
         size="large"
         edge="start"
