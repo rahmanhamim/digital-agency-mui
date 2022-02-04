@@ -64,7 +64,134 @@ const Banner = () => {
       }}
      >
       <Box sx={{ position: "relative", zIndex: "33" }}>
-       <Box></Box>
+       <Box
+        sx={{
+         width: "45px",
+         height: "45px",
+         border: "3px solid #fff",
+         borderRadius: "50% ",
+         position: "absolute",
+         fontWeight: "bold",
+         right: "-30px",
+         top: "-30px",
+         "&::before": {
+          content: '""',
+          width: "40px",
+          height: "40px",
+          borderRadius: "50%",
+          position: "absolute",
+          top: "14px",
+          left: "10px",
+          border: "2px solid #fff",
+          opacity: "0.5",
+         },
+        }}
+       >
+        {/* Circle icon */}
+       </Box>
+       <Box
+        sx={{
+         background: "#fff",
+         height: "38px",
+         position: "absolute",
+         width: "3px",
+         bottom: "-20px",
+         right: "-20px",
+         borderRadius: "2px",
+         "&::before": {
+          background: "#fff",
+          content: '""',
+          height: "3px",
+          left: "-17px",
+          position: "absolute",
+          top: "16px",
+          width: "39px",
+          borderRadius: "2px",
+         },
+        }}
+       >
+        {/* Plus Icon */}
+       </Box>
+       <Box
+        sx={{
+         position: "absolute",
+         bottom: { xs: "-20px", md: "18px" },
+         left: { xs: "0px", md: "-70px" },
+         width: "3px",
+         height: "52.5px",
+         bgcolor: "#fff",
+         borderRadius: "5px",
+         "&:: after": {
+          position: "absolute",
+          content: "''",
+          top: "7.7777px",
+          left: "-16.3px",
+          height: "37px",
+          width: "37px",
+          borderTop: "3px solid #fff",
+          borderRight: "3px solid #fff",
+          transform: "rotate(45deg)",
+         },
+        }}
+       >
+        {/* triangle icon */}
+       </Box>
+       <Box
+        sx={{
+         position: "absolute",
+         bottom: { xs: "-40px", md: "0px" },
+         left: { xs: "10px", md: "-60px" },
+         width: "1px",
+         height: "51px",
+         bgcolor: "#fff",
+         "&:: after": {
+          position: "absolute",
+          content: "''",
+          top: "7px",
+          left: "-18px",
+          height: "37px",
+          width: "37px",
+          borderTop: "1px solid #fff",
+          borderRight: "1px solid #fff",
+          transform: "rotate(45deg)",
+         },
+        }}
+       >
+        {/* triangle icon 2*/}
+       </Box>
+       <Box
+        sx={{
+         position: "absolute",
+         left: { xs: "-42px", md: "-170px" },
+         top: { xs: "0px", md: "20px" },
+         height: "23px",
+         width: "30px",
+         borderRight: "3px solid #fff",
+         borderBottom: "3px solid #fff",
+         transform: "rotate(49deg)",
+         "&:: after": {
+          position: "absolute",
+          content: "''",
+          right: "-27px",
+          bottom: "19px",
+          width: "27px",
+          height: "28px",
+          borderRight: "3px solid #fff",
+          borderBottom: "3px solid #fff",
+         },
+         "&:: before": {
+          position: "absolute",
+          content: "''",
+          right: "-51px",
+          bottom: "46px",
+          width: "27px",
+          height: "3px",
+          bgcolor: "#fff",
+         },
+        }}
+       >
+        {/* zigzag icon */}
+       </Box>
        <Box
         sx={{
          position: "absolute",
