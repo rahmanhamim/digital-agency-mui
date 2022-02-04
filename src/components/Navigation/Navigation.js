@@ -5,7 +5,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import { makeStyles } from "@mui/styles";
 import { Container, useTheme } from "@mui/material";
 import Drawer from "@mui/material/Drawer";
@@ -13,6 +12,8 @@ import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
+import logo from "../../images/Logo Icon 1.png";
+import SegmentRoundedIcon from "@mui/icons-material/SegmentRounded";
 
 export default function Navigation() {
  const theme = useTheme();
@@ -21,6 +22,13 @@ export default function Navigation() {
    color: "#fff",
    textDecoration: "none",
    margin: "0 1em",
+   transition: "all 0.3s",
+   "&:first-child": {
+    color: "#5454D4",
+   },
+   "&:hover": {
+    color: "#5454D4",
+   },
   },
   navIcon: {
    [theme.breakpoints.up("sm")]: {
@@ -72,13 +80,28 @@ export default function Navigation() {
         edge="start"
         color="inherit"
         aria-label="menu"
-        sx={{ mr: 2 }}
+        sx={{ mr: 1 }}
         className={navIcon}
         onClick={() => setState(true)}
        >
-        <MenuIcon />
+        <SegmentRoundedIcon />
        </IconButton>
-       <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+       <Typography
+        variant="h6"
+        component="div"
+        sx={{
+         flexGrow: 1,
+         display: "flex",
+         justify: "center",
+         alignItems: "center",
+         marginRight: "1em",
+        }}
+       >
+        <img
+         src={logo}
+         alt=""
+         style={{ maxWidth: "35px", marginRight: "0.5em" }}
+        />
         ENVER
        </Typography>
        <Box sx={{ width: 1, textAlign: "center" }} className={navItemContainer}>
@@ -95,8 +118,19 @@ export default function Navigation() {
          ABOUT US
         </a>
        </Box>
-       <Button variant="contained" sx={{ color: "#fff", bgcolor: "#red" }}>
-        Login
+       <Button
+        variant="outlined"
+        sx={{
+         color: "#fff",
+         width: "12em",
+         border: "1px solid #fff",
+         "&:hover": {
+          bgcolor: "#5454D4",
+          border: "1px solid #5454D4",
+         },
+        }}
+       >
+        CONTACT US
        </Button>
       </Toolbar>
      </Container>
