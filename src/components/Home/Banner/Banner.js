@@ -16,7 +16,25 @@ const Banner = () => {
      alignItems: "center",
     }}
    >
-    <Grid item xs={12} md={8}>
+    <Grid item xs={12} md={8} sx={{ position: "relative" }}>
+     <Box
+      sx={{
+       position: "absolute",
+       zIndex: "-10",
+       width: "550px",
+       height: "300px",
+       left: "-150px",
+       top: "10px",
+       background:
+        "linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.1134) 100%)",
+       filter: "blur(100px)",
+       borderRadius: "50px",
+       transform: "rotate(45deg)",
+       "&::before": {},
+      }}
+     >
+      {/* gradient */}
+     </Box>
      <Typography
       sx={{
        fontWeight: "bold",
@@ -134,7 +152,7 @@ const Banner = () => {
          },
         }}
        >
-        {/* triangle icon */}
+        {/* triangle icon 1*/}
        </Box>
        <Box
         sx={{
