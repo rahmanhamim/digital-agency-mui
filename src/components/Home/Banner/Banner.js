@@ -21,7 +21,7 @@ const Banner = () => {
       sx={{
        position: "absolute",
        zIndex: "-10",
-       width: "550px",
+       width: { xs: "350px", md: "550px" },
        height: "300px",
        left: "-150px",
        top: "10px",
