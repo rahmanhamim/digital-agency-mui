@@ -52,7 +52,7 @@ export default function Navigation() {
   <Box sx={{ width: 250 }} role="presentation">
    <List>
     <ListItem button>
-     <ListItemText>Home</ListItemText>
+     <ListItemText>HOME</ListItemText>
     </ListItem>
     <ListItem button>
      <ListItemText>SERVICES</ListItemText>

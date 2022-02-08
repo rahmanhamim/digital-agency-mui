@@ -1,6 +1,5 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { bgcolor } from "@mui/system";
 import React from "react";
 import protfolioimg1 from "../../../images/portfolio1.png";
 import protfolioimg2 from "../../../images/portfolio2.png";
