@@ -30,13 +30,13 @@ const Footer = () => {
     </Box>
     <Box>
      <Link sx={{ color: "#757575", textDecoration: "none", mr: 2 }} href="#">
-      Link
+      Support
      </Link>
      <Link sx={{ color: "#757575", textDecoration: "none", mr: 2 }} href="#">
-      Link
+      Privacy Policy
      </Link>
      <Link sx={{ color: "#757575", textDecoration: "none" }} href="#">
-      Link
+      Terms and Conditions
      </Link>
     </Box>
     <Box>
